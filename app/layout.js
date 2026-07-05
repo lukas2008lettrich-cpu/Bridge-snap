@@ -1,5 +1,6 @@
 import './globals.css';
 import { Analytics } from '@vercel/analytics/next';
+import Script from 'next/script';
 
 export const metadata = {
   title: 'Bridge Snap',
@@ -27,6 +28,12 @@ export default function RootLayout({ children }) {
       <body>
         {children}
         <Analytics />
+        <Script
+          src="https://quge5.com/88/tag.min.js"
+          data-zone="256517"
+          data-cfasync="false"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
